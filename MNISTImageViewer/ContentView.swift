@@ -49,18 +49,30 @@ struct PixelImage: View {
 }
 
 struct ContentView: View {
+    private var data: [[Int]] = readCSV(filename: "sign_mnist_train") ?? []
+
     var body: some View {
-        if let data = readCSV(filename: "sign_mnist_train") {
-            if let firstImagePixels = data.first?[1...] {
-                PixelImage(pixels: Array(firstImagePixels))
+        VStack {
+            // Hardcode the index of the image you want to display
+            let currentIndex = 3 // Change this value to display a different image
+            
+            // Check if the index is valid
+            if !data.isEmpty && currentIndex < data.count {
+                // Get the pixel values of the current image, excluding the label
+                let imagePixels = Array(data[currentIndex][1...])
+                
+                // Display the image
+                PixelImage(pixels: imagePixels)
+                    .padding()
+                
+                // Display the label if desired
+                Text("Label: \(data[currentIndex][0])")
+                    .font(.headline)
                     .padding()
             } else {
                 Text("Error: No valid image data found.")
                     .padding()
             }
-        } else {
-            Text("Error: Failed to load CSV data.")
-                .padding()
         }
     }
 }
