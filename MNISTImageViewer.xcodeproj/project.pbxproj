@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A471A7A32CD0A02B00B612E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A471A7A22CD0A02B00B612E1 /* README.md */; };
+		A471A7A52CD0A06500B612E1 /* sshot.png in Resources */ = {isa = PBXBuildFile; fileRef = A471A7A42CD0A06500B612E1 /* sshot.png */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A471A77F2CD09BCE00B612E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		A471A76D2CD09BCD00B612E1 /* MNISTImageViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNISTImageViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471A77E2CD09BCE00B612E1 /* MNISTImageViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNISTImageViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471A7882CD09BCE00B612E1 /* MNISTImageViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNISTImageViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A471A7A22CD0A02B00B612E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A471A7A42CD0A06500B612E1 /* sshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +86,8 @@
 				A471A7812CD09BCE00B612E1 /* MNISTImageViewerTests */,
 				A471A78B2CD09BCE00B612E1 /* MNISTImageViewerUITests */,
 				A471A76E2CD09BCD00B612E1 /* Products */,
+				A471A7A22CD0A02B00B612E1 /* README.md */,
+				A471A7A42CD0A06500B612E1 /* sshot.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A471A7A52CD0A06500B612E1 /* sshot.png in Resources */,
+				A471A7A32CD0A02B00B612E1 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
